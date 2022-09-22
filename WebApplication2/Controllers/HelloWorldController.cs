@@ -9,25 +9,28 @@ namespace WebApplication2.Controllers
 {
     public class HelloWorldController : Controller
     {
-        /* public IActionResult Index()
-         {
-             return View();
-         }*/
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         // 
         // GET: /HelloWorld/
 
-        public string Index()
+        /*public string Index()
         {
             return "This is my default action...";
+        }*/
+        /*public IActionResult Index()
+        {
+            return View();
         }
-
         // 
         // GET: /HelloWorld/Welcome/ 
 
         public string Welcome(string name, int ID = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {OD}");
-        }
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID is: {ID}");
+        }*/
     }
 }

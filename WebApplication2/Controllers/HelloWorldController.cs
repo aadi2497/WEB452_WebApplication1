@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Text.Encodings.Web;
 
 namespace WebApplication2.Controllers
 {
@@ -24,9 +25,9 @@ namespace WebApplication2.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome()
+        public string Welcome(string name = "Aditya", int numTimes = 6)
         {
-            return "This is the Welcome action method...";
+            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
         }
     }
 }

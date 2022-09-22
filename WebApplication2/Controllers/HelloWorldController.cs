@@ -25,9 +25,9 @@ namespace WebApplication2.Controllers
         // 
         // GET: /HelloWorld/Welcome/ 
 
-        public string Welcome(string name = "Aditya", int numTimes = 6)
+        public string Welcome(string name, int ID = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+            return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {OD}");
         }
     }
 }
